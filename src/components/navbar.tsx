@@ -63,10 +63,12 @@ export default function Navbar() {
                 ))}
             </ul>
                 <div className='flex items-center space-x-4'>
-                    {/* <button onClick={signIn} className='bg-purple-600 hover:bg-purple-700 transition-colors duration-300 text-white font-semibold py-2 px-4 rounded-md'>
-                        Sign Up/Sign In
-                    </button> */}
-                    <SignupButton />
+                    <button className='bg-purple-600 hover:bg-purple-700 transition-colors duration-300 text-white font-semibold py-2 px-4 rounded-md'>
+                        <Link href='/signin'>
+                            Sign Up/Sign In
+                        </Link>
+                    </button>
+
                 </div>
             </div>
         </nav>
